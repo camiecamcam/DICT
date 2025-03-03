@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DICT Vigan Ilocos Sur</title>
+    <link rel="icon" type="image/png" href="images/DICT-Logo-icon_only.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen relative">
+    <!-- Blurred Background Logo -->
+    <div class="absolute inset-0 flex justify-center items-center overflow-hidden">
+        <img src="images/DICT-Logo-icon_only.png" alt="DICT Logo Background" class="w-110 opacity blur-lg">
+    </div>
+    
+    <!-- Login Card -->
+    <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md relative z-10">
+        <div class="flex justify-center mb-6">
+            <img src="images/DICT-Logo-icon_only.png" alt="DICT Logo" class="h-16">
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-800 text-center">Welcome Back</h2>
+        <p class="text-gray-500 text-center mb-6">Login to your account</p>
+
+        <form action="#" method="POST" class="space-y-4">
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+                <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+            </div>
+
+            <!-- Password Input -->
+            <div>
+                <label for="password" class="block text-gray-700 font-medium mb-1">Password</label>
+                <input type="password" id="password" name="password" required
+                    class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+            </div>
+
+            <!-- Remember Me & Forgot Password -->
+            <div class="flex items-center justify-between text-sm text-gray-600">
+                <label class="flex items-center">
+                    <input type="checkbox" class="text-blue-500 border-gray-300 rounded">
+                    <span class="ml-2">Remember Me</span>
+                </label>
+                <a href="#" class="text-blue-500 hover:underline">Forgot password?</a>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit"
+                class="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg transition hover:opacity-90">
+                Sign In
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

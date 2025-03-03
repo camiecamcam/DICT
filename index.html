@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICT Vigan Ilocos Sur</title>
+    <link rel="icon" type="image/png" href="images/DICT-Logo-icon_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+           .dropdown-menu {
+    position: absolute;
+    z-index: 50; /* Ensures dropdown appears above other elements */
+}
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Top Bar -->
+    <div class="w-full py-6 bg-white border-b shadow-sm">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <img src="https://cms-cdn.e.gov.ph/DICT/uploads/6b7867b8-3696-48a7-9c88-734aced21565.png?t=1738051695377" 
+                alt="Logo" class="h-16 w-auto mr-4">
+            
+            <!-- Search Bar and Images Container -->
+            <div class="flex items-center space-x-4 ml-auto">
+                <!-- Search Bar -->
+                <div class="relative max-w-xs">
+                    <input type="text" placeholder="Search..." 
+                        class="w-full py-2 px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3a8 8 0 100 16 8 8 000-16zm1 10h-.01M10 12h.01"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Additional Icons -->
+                <div class="flex space-x-4">
+                    <img src="images/transparency-seal.png" alt="Transparency Seal" class="h-12">
+                    <img src="images/freedom-of-information.png" alt="Freedom of Information" class="h-12">
+                    <img src="images/bagong-pilipinas-dark.png" alt="Bagong Pilipinas" class="h-12">
+                    <img src="images/449852440_450121711241461_8218189409017434471_n.png" alt="Bagong Pilipinas" class="h-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-black border-b">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <ul class="hidden md:flex space-x-6 py-4">
+                <li><a href="index.html" class="hover:text-blue-500 font-bold">HOME</a></li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">ABOUT US ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Ilocos Sur DICT Region I</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mandate Powers and Function</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mission and Vision</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Citizen's Charter</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Republic Act 10844</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Attached Agencies</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Officials</a></li>
+                    </ul>
+                </li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">SERVICES ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Common Tower Registration Portal</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Rapid Pass</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">PNPKI</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Postal Regulation</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Information Systems Strategic Plan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Trainings</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Recognition Scheme of All Cybersecurity Assessment Providers</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GOVMAIL</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Goverment Web Hosting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Goverment Web Hosting</a></li>
+
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-blue-500 font-bold">ISSUANCES</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">RESOURCES</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">CAREERS</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">CONTACT US</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">TRANSPARENCY SEAL</a></li>
+            </ul>
+
+            <div class="flex items-center space-x-4">
+                <img src="images/user.png" alt="Logo" class="w-7 h-7">
+                <ul>
+                    <li><a href="login.html" class="hover:text-blue-500 font-bold">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-gray-100 text-black" id="mobile-menu">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">HOME</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">ABOUT US</a>    
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">SERVICES</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CAREERS</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CONTACT US</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">TRANSPARENCY SEAL</a>
+    </div>
+
+    <div class="relative w-full h-[500px] mx-auto overflow-hidden">
+        <!-- Slides Wrapper -->
+        <div id="carousel" class="flex transition-transform duration-1000 ease-in-out w-full">
+            <img src="/images/470668641_564829206437377_14484084526935751_n.jpg" class="w-full h-[500px] object-cover flex-shrink-0 min-w-full" alt="Slide 4">
+
+            <img src="/images/part.jpg" class="w-full h-[500px] object-cover flex-shrink-0 min-w-full" alt="Slide 1">
+
+            <img src="/images/bayangDigitalLarge(3).png" class="w-full h-[500px] object-cover flex-shrink-0 min-w-full" alt="Slide 1">
+            <img src="/images/egovLarge(1).png" class="w-full h-[500px] object-cover flex-shrink-0 min-w-full" alt="Slide 2">
+            <img src="/images/cyberLarge.png" class="w-full h-[500px] object-cover flex-shrink-0 min-w-full" alt="Slide 3">
+            <img src="/images/ilcdbLarge.png" class="w-full h-[500px] object-cover flex-shrink-0 min-w-full" alt="Slide 4">
+
+
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full">
+            ❮
+        </button>
+        <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full">
+            ❯
+        </button>
+    </div>
+    
+    
+
+   <!-- Contents -->
+<!-- Contents -->
+<div class="bg-blue-40" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-top: 50px; margin-bottom: 50px;">
+
+    <p style="font-weight: bold; font-size: 24px; ; text-decoration-color: red ;margin: 10px; text-underline-offset: 4px;">Who We Are</p>
+    <hr style="border: 3px solid red; margin: 10px; width: 20%;">
+
+    <p style="font-size: 18px;">The Department of Information and Communications Technology of Ilocos Sur (DICT Ilocos Sur) shall be the</p>
+    <p style="font-size: 18px;">primary policy, planning, coordinating, implementing, and administrative entity</p>
+    <p style="font-size: 18px;">that will oversee, develop, and promote ICT infrastructure and digital innovation</p>
+    <p style="font-size: 18px;">to support the province's growth and modernization.</p>
+</div>
+
+<!-- Cards in a centered horizontal line -->
+<div class="container mt-" style="display: flex; ;justify-content: space-evenly; align-items: center; flex-wrap: wrap; width: 100%; margin-left: 75px; margin-bottom: 50px;">
+    <!-- Left card -->
+    <div class="card" style="border: 2px solid #007bff; border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 280px; max-width: 320px;">
+        <img src="images/476901712_605215322398765_18243881911371497_n.jpg" class="card-img-top" alt="Image 1" 
+             style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; display: block;">
+        <div class="card-body" style="background-color: #f8f9fa; text-align: center;">
+            <h5 class="card-title" style="color: #007bff;">Card Title 1</h5>
+            <p class="card-text">Some description about the first card.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%;">Read More</a>
+        </div>
+    </div>
+    
+
+    <!-- Center card -->
+    <div class="card" style="border: 2px solid #007bff; border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 280px; max-width: 320px;">
+        <img src="" class="card-img-top" alt="Image 1" 
+             style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; display: block;">
+        <div class="card-body" style="background-color: #f8f9fa; text-align: center;">
+            <h5 class="card-title" style="color: #007bff;">Card Title 1</h5>
+            <p class="card-text">Some description about the first card.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%;">Read More</a>
+        </div>
+    </div>
+    
+
+    <!-- Right card -->
+    <div class="card" style="border: 2px solid #007bff; border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 280px; max-width: 320px;">
+        <img src="images/476033034_599327636320867_3130271344030551002_n.jpg" class="card-img-top" alt="Image 1" 
+             style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; display: block;">
+        <div class="card-body" style="background-color: #f8f9fa; text-align: center;">
+            <h5 class="card-title" style="color: #007bff;">Card Title 1</h5>
+            <p class="card-text">Some description about the first card.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%;">Read More</a>
+        </div>
+    </div>
+    
+</div>
+
+<div>
+
+</div>
+
+    
+    
+      
+      
+      
+      
+      
+      
+    
+<!-- Bottom Bar -->
+<div class="w-full py-24 bg-[#0A0F1F] text-white text-center flex items-center justify-between px-8">
+    <!-- Photo on the Left -->
+    <img src="images/republika.png" alt="Photo" class="h-40 w-40 object-cover">
+    
+    <!-- Text on the Right -->
+    <p class="ml-8">Copyright © Department of Information and Communications Technology of Ilocos Sur. All Rights Reserved 2025</p>
+</div>
+
+   
+
+<script>
+    let currentIndex = 0;
+    const carousel = document.getElementById("carousel");
+    const slides = carousel.querySelectorAll("img");
+    const totalSlides = slides.length;
+
+    function updateCarousel() {
+        const slideWidth = slides[0].clientWidth;
+        carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    document.getElementById("next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    });
+
+    // Autoplay
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    }, 10000);
+
+    document.addEventListener("DOMContentLoaded", function() {
+    // Your existing JavaScript code
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Dropdown Menu Toggle
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+            let dropdown = this.nextElementSibling;
+
+            // Close other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== dropdown) {
+                    menu.classList.add("hidden");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("hidden");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function(event) {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            if (!menu.classList.contains("hidden") && !menu.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    });
+});
+
+</script>
+
+</body>
+</html>
