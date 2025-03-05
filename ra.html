@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICT Vigan Ilocos Sur</title>
+    <link rel="icon" type="image/png" href="images/DICT-Logo-icon_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+           .dropdown-menu {
+    position: absolute;
+    z-index: 50; /* Ensures dropdown appears above other elements */
+}
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Top Bar -->
+    <div class="w-full py-6 bg-white border-b shadow-sm">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <img src="https://cms-cdn.e.gov.ph/DICT/uploads/6b7867b8-3696-48a7-9c88-734aced21565.png?t=1738051695377" 
+                alt="Logo" class="h-16 w-auto mr-4">
+            
+            <!-- Search Bar and Images Container -->
+            <div class="flex items-center space-x-4 ml-auto">
+                <!-- Search Bar -->
+                <div class="relative max-w-xs">
+                    <input type="text" placeholder="Search..." 
+                        class="w-full py-2 px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3a8 8 0 100 16 8 8 000-16zm1 10h-.01M10 12h.01"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Additional Icons -->
+                <div class="flex space-x-4">
+                    <img src="images/transparency-seal.png" alt="Transparency Seal" class="h-12">
+                    <img src="images/freedom-of-information.png" alt="Freedom of Information" class="h-12">
+                    <img src="images/bagong-pilipinas-dark.png" alt="Bagong Pilipinas" class="h-12">
+                    <img src="images/449852440_450121711241461_8218189409017434471_n.png" alt="Bagong Pilipinas" class="h-12" href="https://www.facebook.com/DICTREGION1ILOCOSSUR">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-black border-b">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <ul class="hidden md:flex space-x-6 py-4">
+                <li><a href="index.html" class="hover:text-blue-500 font-bold">HOME</a></li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">ABOUT US ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                        <li><a href="dictis.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Ilocos Sur DICT Region I</a></li>
+                        <li><a href="mandate.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mandate Powers and Function</a></li>
+                        <li><a href="m&v.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mission and Vision</a></li>
+                        <li><a href="ccharter.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Citizen's Charter Region I</a></li>
+                        <li><a href="ra.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Republic Act 10844</a></li>
+                        <li><a href="a&a.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Attached Agencies</a></li>
+                        <li><a href="officials.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Officials</a></li>
+                    </ul>
+                </li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">SERVICES ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                       
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">PNPKI</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Information Systems Strategic Plan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Trainings</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GOVMAIL</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Government Web Hosting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GovDNS HOSTING SERVICE</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">.gov.ph Registration</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-blue-500 font-bold">RESOURCES</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">CAREERS</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500 font-bold">CONTACT US</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">TRANSPARENCY SEAL</a></li>
+            </ul>
+
+           
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-gray-100 text-black" id="mobile-menu">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">HOME</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">ABOUT US</a>    
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CAREERS</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CONTACT US</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">TRANSPARENCY SEAL</a>
+    </div>
+
+    
+    
+    <div class="bg-blue-40" style="    margin-top: 50px; margin-bottom: 50px;">
+        <!-- Content Section -->
+      
+            <p style="font-weight: bolder; font-size: 40px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%;">Republic Act No. 10844</p>
+
+            <p style="font-size: 18px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <span style="font-weight: bold;">Republic Act  No. 10844</span>, otherwise known as the  <span style="font-weight: bold;">“Department of Information and Communications Technology Act of 2015” </span>, which was signed into law on 23 May 2016.
+              </p>
+              <p style="font-size: 18   px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                In accordance to the law, <span style="font-weight: bold;">the Department of Information and Communications Technology (DICT)</span>  shall be the primary policy, planning, coordinating, implementing, and administrative entity of the Executive Branch of the government that will plan, develop, and promote the national ICT development agenda.  
+              </p>
+              
+        
+            
+
+
+
+           
+            <p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-right: 10%;  ">The DICT shall strengthen its efforts on the following focus areas:</p>
+            
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Policy and Planning
+            </p>
+           
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Improved Public Access
+
+            </p>
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Resource-Sharing and Capacity-Building
+
+            </p>
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Consumer Protection and Industry Development
+
+            </p>
+         
+            <p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">Apart from this, the DICT is expected to spearhead the following endeavors:</p>
+
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Nation building Through ICT
+
+            </p>
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Safeguarding of Information
+            </p>
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Advancement of ICT in the Philippines
+            </p>
+
+            <p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">Aligning with the current administration’s ICT Agenda, the DICT will prioritize the following:</p>
+
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Development of a National Broadband Plan to accelerate the deployment of fiber optic cables and wireless technologies to improve internet speed
+            </p>
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Provision of Wi-Fi access at no charge in selected public places including parks, plazas, public libraries, schools, government hospitals, train stations, airports, and seaports
+
+            </p>
+            <p style="font-size: 15px; color: #939393; text-underline-offset: 4px; margin: 10px; margin-left: 12%; margin-right: 10%; position: relative;">
+                <span style="position: absolute; left: -15px; top: 0;">&#8226;</span> Development of a National ICT Portal
+</p>
+
+<p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">For information and guidance of all concerned, please click on the link below:</p>
+
+<p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">
+    <a href="https://www.officialgazette.gov.ph/2016/05/23/republic-act-no-10844/" target="_blank" style="color: blue; text-decoration: none; "onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none' ">Republic Act No.10844</a>
+  </p><p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">For a complete copy of the Implementing Rules and Regulation, please click on the link below:
+
+  </p>
+
+  <p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">
+    <a href="https://www.officialgazette.gov.ph/2016/05/23/republic-act-no-10844/" target="_blank" style="color: blue; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Republic Act No. 10844 IRR</a>
+</p>
+  
+  
+            </p>
+
+
+
+
+
+
+            </div>
+        
+    </div>
+    
+    
+    
+
+
+
+<div>
+
+</div>
+
+    
+    
+      
+      
+      
+      
+      
+      
+    
+<!-- Bottom Bar -->
+<div class="w-full py-24 bg-[#0A0F1F] text-white text-center flex items-center justify-between px-8">
+    <!-- Photo on the Left -->
+    <img src="images/republika.png" alt="Photo" class="h-40 w-40 object-cover">
+    
+    <!-- Text on the Right -->
+    <p class="ml-8">Copyright © Department of Information and Communications Technology of Ilocos Sur. All Rights Reserved 2025</p>
+</div>
+
+   
+
+<script>
+ 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Dropdown Menu Toggle
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+            let dropdown = this.nextElementSibling;
+
+            // Close other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== dropdown) {
+                    menu.classList.add("hidden");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("hidden");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function(event) {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            if (!menu.classList.contains("hidden") && !menu.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    });
+});
+
+</script>
+<script>
+//TEXT PLUS/MINUS BUTTON
+//TEXT PLUS/MINUS BUTTON
+document.querySelectorAll('.plus-button').forEach(button => {
+    button.addEventListener('click', function() {
+        let paragraph = this.nextElementSibling.querySelector('p'); 
+        
+        // Ensure the paragraph is shown initially
+        if (paragraph.style.display === '' || paragraph.style.display === 'none') {
+            paragraph.style.display = 'block';  // Show the paragraph
+            this.textContent = '-';  // Change the button to minus
+        } else {
+            paragraph.style.display = 'none';  // Hide the paragraph
+            this.textContent = '+';  // Change the button to plus
+        }
+    });
+});
+
+
+</script>
+</body>
+</html>

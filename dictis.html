@@ -6,6 +6,16 @@
     <title>DICT Vigan Ilocos Sur</title>
     <link rel="icon" type="image/png" href="images/DICT-Logo-icon_only.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+           .dropdown-menu {
+    position: absolute;
+    z-index: 50; /* Ensures dropdown appears above other elements */
+}
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+    </style>
 </head>
 <body class="bg-white text-black">
 
@@ -32,6 +42,8 @@
                     <img src="images/transparency-seal.png" alt="Transparency Seal" class="h-12">
                     <img src="images/freedom-of-information.png" alt="Freedom of Information" class="h-12">
                     <img src="images/bagong-pilipinas-dark.png" alt="Bagong Pilipinas" class="h-12">
+                    <img src="images/449852440_450121711241461_8218189409017434471_n.png" alt="Bagong Pilipinas" class="h-12" href="https://www.facebook.com/DICTREGION1ILOCOSSUR">
+
                 </div>
             </div>
         </div>
@@ -41,11 +53,12 @@
     <nav class="bg-gray-100 text-black border-b">
         <div class="container mx-auto px-6 flex items-center justify-between">
             <ul class="hidden md:flex space-x-6 py-4">
-                <li><a href="#" class="hover:text-blue-500 font-bold">HOME</a></li>
+                <li><a href="index.html" class="hover:text-blue-500 font-bold">HOME</a></li>
 
                 <li class="relative">
                     <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">ABOUT US ▼</button>
                     <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                        <li><a href="dictis.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Ilocos Sur DICT Region I</a></li>
                         <li><a href="mandate.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mandate Powers and Function</a></li>
                         <li><a href="m&v.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mission and Vision</a></li>
                         <li><a href="ccharter.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Citizen's Charter Region I</a></li>
@@ -55,6 +68,7 @@
                     </ul>
                 </li>
 
+                
                 <li class="relative">
                     <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">SERVICES ▼</button>
                     <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
@@ -70,15 +84,14 @@
 
                     </ul>
                 </li>
-
-
                 <li><a href="#" class="hover:text-blue-500 font-bold">RESOURCES</a></li>
                 <li><a href="#" class="hover:text-blue-500 font-bold">CAREERS</a></li>
                 <li><a href="contact.html" class="hover:text-blue-500 font-bold">CONTACT US</a></li>
                 <li><a href="#" class="hover:text-blue-500 font-bold">TRANSPARENCY SEAL</a></li>
             </ul>
 
-           
+          
+        </div>
 
         <!-- Mobile Menu Button -->
         <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
@@ -92,31 +105,44 @@
     <div class="md:hidden hidden bg-gray-100 text-black" id="mobile-menu">
         <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">HOME</a>
         <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">ABOUT US</a>    
-        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">RESOURCES</a>
         <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CAREERS</a>
         <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CONTACT US</a>
         <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">TRANSPARENCY SEAL</a>
     </div>
 
+    
+    
+    <div class="bg-blue-40" style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 50px; margin-bottom: 50px;">
+        <!-- Content Section -->
+        <div style="background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 50%; max-width: 600px;">
+            <p style="font-weight: bold; font-size: 24px; color: #333; text-underline-offset: 4px; margin: 10px; text-align: center;">DICT Region 1 - Ilocos Sur</p>
+            
+            <!-- Align the text to the left -->
+            <div style="text-align: left;">
+                <p style="font-size: 18px; color: #555;"> <strong>Government organization: </strong> Public & Government Service</p>
+                <p style="font-size: 18px; color: #555;"><strong>Address: </strong> Brgy. III, Florentino St., 2700</p>
+                <p style="font-size: 18px; color: #555;"><strong>Email: </strong> dictr1.ilocossur@dict.gov.ph</p>
+                <p style="font-size: 18px; color: #555;"><strong>Website: </strong>https://www.facebook.com/DICTREGION1ILOCOSSUR</p>
+            </div>
+        </div>
+        
+        <!-- Image Section -->
+        <div style="width: 50%; padding-left: 20px;">
+            <img src="images/449852440_450121711241461_8218189409017434471_n.jpg" alt="DICT Region 1" style="width: 50%;margin-left: 200px; ">
+        </div>
+    </div>
+    
+    
 
 
-    <!-- Navigation Buttons -->
-    <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-        ❮
-    </button>
-    <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-        ❯
-    </button>
+
+<div>
+
 </div>
 
-    <!--Contents-->
-    <div class="bg-blue-40" : style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-        <p style="font-weight: bold; font-size: 24px; text-decoration: underline; text-decoration-color: red; text-underline-offset: 4px;">Who We Are</p>
-        <p style="font-size: 18px;">The Department of Information and Communications Technology (DICT) shall be the</p>
-        <p style="font-size: 18px;">primary policy, planning, coordinating, implementing, and administrative entity of the</p>
-        <p style="font-size: 18px;">Executive Branch of the government that will plan, develop, and promote the national</p>
-        <p style="font-size: 18px;">ICT development agenda. (RA 10844)</p>
-      </div>
+    
+    
+      
       
       
       
@@ -132,68 +158,40 @@
     <p class="ml-8">Copyright © Department of Information and Communications Technology of Ilocos Sur. All Rights Reserved 2025</p>
 </div>
 
-    <script>
-        // Mobile Menu Toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Dropdown Menu Toggle
-        document.querySelectorAll(".dropdown-toggle").forEach(button => {
-            button.addEventListener("click", function(event) {
-                event.stopPropagation(); // Prevents click from closing immediately
-                let dropdown = this.nextElementSibling;
-
-                // Close all other dropdowns
-                document.querySelectorAll(".dropdown-menu").forEach(menu => {
-                    if (menu !== dropdown) {
-                        menu.classList.add("hidden");
-                        menu.previousElementSibling.setAttribute("aria-expanded", "false");
-                    }
-                });
-
-                // Toggle this dropdown
-                const isExpanded = dropdown.classList.toggle("hidden");
-                this.setAttribute("aria-expanded", !isExpanded);
-            });
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener("click", function(event) {
-            document.querySelectorAll(".dropdown-menu").forEach(menu => {
-                if (!menu.contains(event.target)) {
-                    menu.classList.add("hidden");
-                    menu.previousElementSibling.setAttribute("aria-expanded", "false");
-                }
-            });
-        });
-    </script>
+   
 
 <script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll("#carousel img");
-    const totalSlides = slides.length;
-    const carousel = document.getElementById("carousel");
+ 
 
-    function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentIndex * 723}px)`;
-    }
+document.addEventListener("DOMContentLoaded", function() {
+    // Dropdown Menu Toggle
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+            let dropdown = this.nextElementSibling;
 
-    document.getElementById("next").addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateCarousel();
+            // Close other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== dropdown) {
+                    menu.classList.add("hidden");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("hidden");
+        });
     });
 
-    document.getElementById("prev").addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateCarousel();
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function(event) {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            if (!menu.classList.contains("hidden") && !menu.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
     });
+});
 
-    // Autoplay
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateCarousel();
-    }, 3000);
 </script>
 
 </body>

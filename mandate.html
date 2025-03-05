@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICT Vigan Ilocos Sur</title>
+    <link rel="icon" type="image/png" href="images/DICT-Logo-icon_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+           .dropdown-menu {
+    position: absolute;
+    z-index: 50; /* Ensures dropdown appears above other elements */
+}
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Top Bar -->
+    <div class="w-full py-6 bg-white border-b shadow-sm">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <img src="https://cms-cdn.e.gov.ph/DICT/uploads/6b7867b8-3696-48a7-9c88-734aced21565.png?t=1738051695377" 
+                alt="Logo" class="h-16 w-auto mr-4">
+            
+            <!-- Search Bar and Images Container -->
+            <div class="flex items-center space-x-4 ml-auto">
+                <!-- Search Bar -->
+                <div class="relative max-w-xs">
+                    <input type="text" placeholder="Search..." 
+                        class="w-full py-2 px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3a8 8 0 100 16 8 8 000-16zm1 10h-.01M10 12h.01"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Additional Icons -->
+                <div class="flex space-x-4">
+                    <img src="images/transparency-seal.png" alt="Transparency Seal" class="h-12">
+                    <img src="images/freedom-of-information.png" alt="Freedom of Information" class="h-12">
+                    <img src="images/bagong-pilipinas-dark.png" alt="Bagong Pilipinas" class="h-12">
+                    <img src="images/449852440_450121711241461_8218189409017434471_n.png" alt="Bagong Pilipinas" class="h-12" href="https://www.facebook.com/DICTREGION1ILOCOSSUR">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-black border-b">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <ul class="hidden md:flex space-x-6 py-4">
+                <li><a href="index.html" class="hover:text-blue-500 font-bold">HOME</a></li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">ABOUT US ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                        <li><a href="dictis.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Ilocos Sur DICT Region I</a></li>
+                        <li><a href="mandate.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mandate Powers and Function</a></li>
+                        <li><a href="m&v.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mission and Vision</a></li>
+                        <li><a href="ccharter.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Citizen's Charter Region I</a></li>
+                        <li><a href="ra.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Republic Act 10844</a></li>
+                        <li><a href="a&a.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Attached Agencies</a></li>
+                        <li><a href="officials.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Officials</a></li>
+                    </ul>
+                </li>
+
+               
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">SERVICES ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                       
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">PNPKI</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Information Systems Strategic Plan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Trainings</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GOVMAIL</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Government Web Hosting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GovDNS HOSTING SERVICE</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">.gov.ph Registration</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-blue-500 font-bold">RESOURCES</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">CAREERS</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500 font-bold">CONTACT US</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">TRANSPARENCY SEAL</a></li>
+            </ul>
+
+           
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-gray-100 text-black" id="mobile-menu">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">HOME</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">ABOUT US</a>    
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CAREERS</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CONTACT US</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">TRANSPARENCY SEAL</a>
+    </div>
+
+    
+    
+    <div class="bg-blue-40" style="    margin-top: 50px; margin-bottom: 50px;">
+        <!-- Content Section -->
+      
+            <p style="font-weight: bolder; font-size: 24px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%;">Mandate, Powers and Functions</p>
+
+            <p style="font-weight: bold; font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%;">MANDATE</p>
+            <p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-right: 10%;">The Department of Information and Communications Technology (DICT) shall be the primary policy, planning, coordinating, implementing, and administrative entity of the Executive Branch of the government that will plan, develop, and promote the national ICT development agenda. (RA 10844)</p>
+
+            <p style="font-weight: bold; font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%;">POWERS AND FUNCTIONS</p>
+
+            <div id="container" style="font-weight: bolder; font-size: 20px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <div class="row" style="display: flex; align-items: flex-start; margin-bottom: 10px; border: 1px solid #000; padding: 5px; width: 90%;"> 
+                    <button class="plus-button" style="margin-right: 10px; padding: 5px 10px; font-size: 15px; cursor: pointer; ">+</button> 
+                    <div style="display: flex; flex-direction: column;">
+                        <span >I. Policy and Planning</span>
+                        <p style="display: none; margin: 10px 0 0; font-weight: normal; margin-top: 10px;">
+                            (a) Formulate, recommend and implement national policies, plans, programs and guidelines that will promote the development and use of ICT with due consideration to the advantages of convergence and emerging technologies; <br >
+                            <br >
+                            
+                            (b) Formulate policies and initiatives, in coordination with the Department of Education (DepED), the Commission on Higher Education (CHED), and the Technical Education and Skills Development Authority (TESDA), to develop and promote ICT in education consistent with the national goals and objectives, and responsive to the human resource needs of the ICT and ICT-enabled services (ICT-ES) sectors;<br >
+                            <br >
+                            (c) Provide an integrated framework in order to optimize all government ICT resources and networks for the identification and prioritization of all E-Government systems and applications as provided for the E-Government Masterplan and the Philippine Development Plan (PDP);<br >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="container" style="font-weight: bolder; font-size: 20px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <div class="row" style="display: flex; align-items: flex-start; margin-bottom: 10px; border: 1px solid #000; padding: 5px; width: 90%;"> 
+                    <button class="plus-button" style="margin-right: 10px; padding: 5px 10px; font-size: 15px; cursor: pointer; ">+</button> 
+                    <div style="display: flex; flex-direction: column;">
+                        <span >II. Improved Public Access</span>
+                        <p style="display: none; margin: 10px 0 0; font-weight: normal; margin-top: 10px;">
+                            (d) Prescribe rules and regulations for the establishment, operation and maintenance of ICT infrastructures in unserved and underserved areas, in consultation with the local government units (LGUs), civil society organizations (CSOs), private sector, and the academe;<br >
+                            <br >
+                            
+                            (e) Establish a free internet service that can be accessed in government offices and public areas using the most cost-effective telecommunications technology, through partnership with private service providers as may be necessary;                            <br >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="container" style="font-weight: bolder; font-size: 20px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <div class="row" style="display: flex; align-items: flex-start; margin-bottom: 10px; border: 1px solid #000; padding: 5px; width: 90%;"> 
+                    <button class="plus-button" style="margin-right: 10px; padding: 5px 10px; font-size: 15px; cursor: pointer; ">+</button> 
+                    <div style="display: flex; flex-direction: column;">
+                        <span >III. Resource-sharing and Capacity Building</span>
+                        <p style="display: none; margin: 10px 0 0; font-weight: normal; margin-top: 10px;">
+                            (f) Harmonize and coordinate all national ICT plans and initiatives to ensure knowledge, information and resource-sharing, database-building and agency networking linkages among government agencies, consistent with E-Government objectives in particular, and national objectives in general;                            <br >
+                            <br>
+                            (g) Ensure the development and protection of integrated government ICT infrastructures and designs, taking into consideration the inventory of existing manpower, plans, programs, software, hardware, and installed systems;            <br >           
+                            <br>
+                            (h) Assist and provide technical expertise to government agencies in the development of guidelines in the enforcement and administration of laws, standards, rules, and regulations governing ICT;<br >
+                            <br>
+                            (i) Assess, review and support ICT research and development programs of the government in coordination with the Department of Science and Technology (DOST) and other institutions concerned;<br >
+                            <br>
+                            (j) Prescribe the personnel qualifications and other qualification standards essential to the effective development and operation of government ICT infrastructures and systems;<br >
+                            <br>
+                            (k) Develop programs that would enhance the career advancement opportunities of ICT workers in government;<br >
+                            <br>
+                            (l) Assist in the dissemination of vital information essential to disaster risk reduction through the use of ICT;<br >
+                            <br>
+                            (m) Represent and negotiate for Philippine interest on matters pertaining to ICT in international bodies, in coordination with the Department of Foreign Affairs (DFA) and other institutions concerned;<br >
+                        </p>
+                        </div>
+                </div>
+            </div>
+            <div id="container" style="font-weight: bolder; font-size: 20px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <div class="row" style="display: flex; align-items: flex-start; margin-bottom: 10px; border: 1px solid #000; padding: 5px; width: 90%;"> 
+                    <button class="plus-button" style="margin-right: 10px; padding: 5px 10px; font-size: 15px; cursor: pointer; ">+</button> 
+                    <div style="display: flex; flex-direction: column;">
+                        <span >IV. Consumer Protection and Industry Development</span>
+                        <p style="display: none; margin: 10px 0 0; font-weight: normal; margin-top: 10px;">
+                            (n) Ensure and protect the rights and welfare of consumers and business users to privacy, security and confidentiality in matters relating to ICT, in coordination with agencies concerned, the private sector and relevant international bodies;                            <br >
+                            <br>
+                            (o) Support the promotion of trade and investment opportunities in the ICT and ICT-ES sectors, in coordination with the Department of Trade and Industry (DTI) and other relevant government agencies and the private sector;                      <br>  
+                            <br>
+                            (p) Establish guidelines for public-private partnerships in the implementation of ICT projects for government agencies; <br>
+                            <br>
+                            (q) Promote strategic partnerships and alliances between and among local and international ICT , research and development, educational and training institutions to speed up industry growth and enhance competitiveness of Philippine workers, firms, and small and medium enterprises in the global markets for ICT and ICT-ES;
+                            <br>
+                          
+
+                        
+                        
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="container" style="font-weight: bolder; font-size: 20px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <div class="row" style="display: flex; align-items: flex-start; margin-bottom: 10px; border: 1px solid #000; padding: 5px; width: 90%;"> 
+                    <button class="plus-button" style="margin-right: 10px; padding: 5px 10px; font-size: 15px; cursor: pointer; ">+</button> 
+                    <div style="display: flex; flex-direction: column;">
+                        <span >V. Cybersecurity Policy  and Program Coordination </span>
+                        <p style="display: none; margin: 10px 0 0; font-weight: normal; margin-top: 10px;">
+                            (r) To formulate a national cybersecurity plan consisting of robust and coherent strategies that would minimize national security risks in order to promote a peaceful, secure, open and cooperative ICT environment;                          <br >
+                            <br>
+                            (s) To extend immediate assistance for the suppression of real-time commission of cybercrime offenses and cyber-attacks against critical infrastructures and/or affecting national security through a computer emergency response team (CERT);                  <br>  
+                            <br>
+                            (t) To provide pro-active government countermeasures to address and anticipate all domestic and transnational incidents affecting the Philippine cyberspace and any cybersecurity threats to the country; <br>
+                            <br>
+                            (u) To enhance the public-private partnership in the field of information sharing involving cyber-attacks, threats and vulnerabilities, and to coordinate in the preparation of appropriate and effective measures to prevent and suppress cybercrime as provided in R.A. No. 10175 <br>
+                            <br>
+                            (v) To monitor cybercrime cases being handled by participating law and prosecution agencies, and to facilitate international cooperation on intelligence, investigations, training and capacity building related to cybercrime prevention, suppression, and prosecution; <br>
+                            <br>
+                            (w) To coordinate the support participation of the business sector, local government units and nongovernment organizations in cybercrime prevention programs and other related projects; <br>
+                            <br>
+                            (x) To recommend the enactment of appropriate laws, issuances, measures and policies; <br>
+                            <br>
+                            (y) To call upon any government agency to render assistance in the accomplishment of the Department’s mandated tasks and functions; <br>
+                            <br>
+                            (z) To perform all other matters related to cybercrime prevention and suppression including capacity building and such other functions and duties as may be necessary for the proper implementation of R.A. No. 10175; <br>
+
+
+                        
+                        
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container" style="font-weight: bolder; font-size: 20px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%;">
+                <div class="row" style="display: flex; align-items: flex-start; margin-bottom: 10px; border: 1px solid #000; padding: 5px; width: 90%;"> 
+                    <button class="plus-button" style="margin-right: 10px; padding: 5px 10px; font-size: 15px; cursor: pointer; ">+</button> 
+                    <div style="display: flex; flex-direction: column;">
+                        <span >VI. Countryside Development</span>
+                        <p style="display: none; margin: 10px 0 0; font-weight: normal; margin-top: 10px;">
+                            (aa) Formulate policies in consultation with local government units and other local stakeholders and line agencies for the implementation of responsive, relevant and comprehensive ICT-related strategies to improve the competitiveness of provincial locations for ICT and ICT-ES industry in order to develop balanced investments between high-growth and economically-depressed areas and to promote the development and widespread use of ICT;     <br >
+                            <br>
+                            (bb) Develop plans and programs in coordination with LGUs and other local stakeholders and line agencies to ensure that universal access to ICT services and infrastructure are effectively utilized to generate investments and opportunities in the rural area or areas unserved by private sector;<br>  
+                            <br>
+                            (cc) Assist, guide and support ICT-related activities and initiatives for countryside economic development; and<br>
+                            <br>
+                            (dd) Promote and assist LGUs and local stakeholders in developing specialized ICT-enabled investments areas by providing technical and industry-calibrated assistance in the use of ICT for the enhancement of key public services, development and promotion of local arts and culture, tourism, digital literacy, and talent development.
+                            <br>
+                         
+                            <br>
+                            Please  click <a href="https://cms-cdn.e.gov.ph/DICT/pdf/What-is-DICT.pdf" target="_blank" style="color: blue;">here </a>to download a copy of the DICT’s Mandate, Powers and Functions.
+                            <br>
+                                                        <br>
+                                                        <br>
+                            
+                          
+
+                        
+                        
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    
+    
+    
+
+
+
+<div>
+
+</div>
+
+    
+    
+      
+      
+      
+      
+      
+      
+    
+<!-- Bottom Bar -->
+<div class="w-full py-24 bg-[#0A0F1F] text-white text-center flex items-center justify-between px-8">
+    <!-- Photo on the Left -->
+    <img src="images/republika.png" alt="Photo" class="h-40 w-40 object-cover">
+    
+    <!-- Text on the Right -->
+    <p class="ml-8">Copyright © Department of Information and Communications Technology of Ilocos Sur. All Rights Reserved 2025</p>
+</div>
+
+   
+
+<script>
+ 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Dropdown Menu Toggle
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+            let dropdown = this.nextElementSibling;
+
+            // Close other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== dropdown) {
+                    menu.classList.add("hidden");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("hidden");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function(event) {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            if (!menu.classList.contains("hidden") && !menu.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    });
+});
+
+</script>
+<script>
+//TEXT PLUS/MINUS BUTTON
+//TEXT PLUS/MINUS BUTTON
+document.querySelectorAll('.plus-button').forEach(button => {
+    button.addEventListener('click', function() {
+        let paragraph = this.nextElementSibling.querySelector('p'); 
+        
+        // Ensure the paragraph is shown initially
+        if (paragraph.style.display === '' || paragraph.style.display === 'none') {
+            paragraph.style.display = 'block';  // Show the paragraph
+            this.textContent = '-';  // Change the button to minus
+        } else {
+            paragraph.style.display = 'none';  // Hide the paragraph
+            this.textContent = '+';  // Change the button to plus
+        }
+    });
+});
+
+
+</script>
+</body>
+</html>

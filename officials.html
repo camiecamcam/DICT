@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICT Vigan Ilocos Sur</title>
+    <link rel="icon" type="image/png" href="images/DICT-Logo-icon_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+           .dropdown-menu {
+    position: absolute;
+    z-index: 50; /* Ensures dropdown appears above other elements */
+}
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Top Bar -->
+    <div class="w-full py-6 bg-white border-b shadow-sm">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <img src="https://cms-cdn.e.gov.ph/DICT/uploads/6b7867b8-3696-48a7-9c88-734aced21565.png?t=1738051695377" 
+                alt="Logo" class="h-16 w-auto mr-4">
+            
+            <!-- Search Bar and Images Container -->
+            <div class="flex items-center space-x-4 ml-auto">
+                <!-- Search Bar -->
+                <div class="relative max-w-xs">
+                    <input type="text" placeholder="Search..." 
+                        class="w-full py-2 px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3a8 8 0 100 16 8 8 000-16zm1 10h-.01M10 12h.01"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Additional Icons -->
+                <div class="flex space-x-4">
+                    <img src="images/transparency-seal.png" alt="Transparency Seal" class="h-12">
+                    <img src="images/freedom-of-information.png" alt="Freedom of Information" class="h-12">
+                    <img src="images/bagong-pilipinas-dark.png" alt="Bagong Pilipinas" class="h-12">
+                    <img src="images/449852440_450121711241461_8218189409017434471_n.png" alt="Bagong Pilipinas" class="h-12" href="https://www.facebook.com/DICTREGION1ILOCOSSUR">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-black border-b">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <ul class="hidden md:flex space-x-6 py-4">
+                <li><a href="index.html" class="hover:text-blue-500 font-bold">HOME</a></li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">ABOUT US ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                        <li><a href="dictis.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Ilocos Sur DICT Region I</a></li>
+                        <li><a href="mandate.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mandate Powers and Function</a></li>
+                        <li><a href="m&v.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Mission and Vision</a></li>
+                        <li><a href="ccharter.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Citizen's Charter Region I</a></li>
+                        <li><a href="ra.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Republic Act 10844</a></li>
+                        <li><a href="a&a.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Attached Agencies</a></li>
+                        <li><a href="officials.html" class="block px-4 py-2 hover:bg-gray-300 font-bold">Officials</a></li>
+                    </ul>
+                </li>
+
+                <li class="relative">
+                    <button class="dropdown-toggle hover:text-blue-500 font-bold" aria-expanded="false">SERVICES ▼</button>
+                    <ul class="dropdown-menu absolute left-0 hidden bg-gray-100 text-black mt-2 w-48 shadow-lg rounded-md">
+                       
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">PNPKI</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Information Systems Strategic Plan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Trainings</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GOVMAIL</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">Government Web Hosting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">GovDNS HOSTING SERVICE</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">.gov.ph Registration</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-blue-500 font-bold">RESOURCES</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">CAREERS</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500 font-bold">CONTACT US</a></li>
+                <li><a href="#" class="hover:text-blue-500 font-bold">TRANSPARENCY SEAL</a></li>
+            </ul>
+
+           
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-gray-100 text-black" id="mobile-menu">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">HOME</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">ABOUT US</a>    
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CAREERS</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">CONTACT US</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-300 font-bold">TRANSPARENCY SEAL</a>
+    </div>
+
+    
+    
+    <div class="bg-blue-40" style="    margin-top: 50px; margin-bottom: 50px;">
+        <!-- Content Section -->
+      
+            <p style="font-weight: bolder; font-size: 40px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-bottom: 3%;">Secretary</p>
+
+            <div class="card" style=" border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column; margin-left: 100px;">
+                <img src="images/Sec-Ivan-Uy-cropped.jpg" class="card-img-top" alt="Image 1" 
+                     style="width: 500%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; margin-left: 5px; margin-right: 10px;">
+                    <h3 class="card-title" style="color: #1e2731; text-align: left; margin-left: 10px; font-weight: bolder; font-size: large;">Ivan John E. Uy</h3>
+                    <h5 class="card-title" style="color: #1e2731; text-align: left; margin-left: 10px;  margin-bottom: 20px; margin-top: 20px;">Secretary</h5>
+
+                   
+        
+                </div>
+            </div>
+            <p style="font-weight: bolder; font-size: 40px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-top: 5% ; margin-bottom: 3%;">Undersecretaries</p>
+
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" style="margin-left: 100px;">
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Usec-Paul-Mercado-1-cropped.jpg" class="card-img-top" alt="Image 1" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align:  flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Paul Joseph V. Mercado</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Undersecretary for Special Concerns</h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Heherson-Asiddao-cropped.jpg" class="card-img-top" alt="Image 2" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify;  flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Heherson M. Asiddao</h3>
+                        <h5 class="card-title" style="color: #1e2731;  margin-bottom: 20px; margin-top: 20px;">Undersecretary for Support Services</h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Jeff-Dy-cropped.jpg" class="card-img-top" alt="Image 3" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify;  flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Jeffrey Ian C. Dy</h3>
+                        <h5 class="card-title" style="color: #1e2731;  margin-bottom: 20px; margin-top: 20px;">Undersecretary for Infostructure / Management, Cybersecurity and Upskilling /Authorized Representative for National /y</h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Usec-David-Almirol-cropped.jpg" class="card-img-top" alt="Image 4" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">David L. Almirol Jr.</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Undersecretary for e-Government</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style=" border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column; margin-top: 5%; margin-left: 100px;">
+                <img src="images/Usec-Batapa-Sigue-cropped.jpg" class="card-img-top" alt="Image 1" 
+                     style="width: 500%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <div class="card-body" style="background-color: #f8f9fa; text-align: justify; flex-direction: column; justify-content: space-between; flex-grow: 1; margin-left: 5px; margin-right: 10px;">
+                    <h3 class="card-title" style="color: #1e2731; text-align: left; margin-left: 10px; font-weight: bolder; font-size: large;">Jocelle E. Batapa-Sigue</h3>
+                    <h5 class="card-title" style="color: #1e2731; text-align: left; margin-left: 10px;  margin-bottom: 20px; margin-top: 20px;">Undersecretary for ICT Industry Development</h5>
+
+                   
+        
+                </div>
+            </div>
+            <p style="font-weight: bolder; font-size: 40px; color: #333; text-underline-offset: 4px; margin: 10px;  margin-left: 10%; margin-top: 5% ; margin-bottom: 3%;">Assistant Secretaries</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" style="margin-left: 100px;">
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Gerald-Reyes-cropped.jpg" class="card-img-top" alt="Image 1" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Gerald James B. Reyes</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Assistant Secretary for Planning and Procurement</h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Tess-Camba-2-cropped.jpg" class="card-img-top" alt="Image 2" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Maria Teresa M. Camba</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Assistant Secretary for Regional Development</h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Philip-Varilla-cropped.jpg" class="card-img-top" alt="Image 3" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Philip A. Varilla</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Assistant Secretary for Infostructure Management
+                        </h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Wilroy-Ticzon-cropped.jpg" class="card-img-top" alt="Image 4" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Wilroy V. Ticzon</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Assistant Secretary for Consumer Protection</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" style="margin-left: 100px; margin-top: 10%;">
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Edwin-Ligot-cropped.jpg" class="card-img-top" alt="Image 1" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Edwin S. Ligot</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Assistant Secretary for Management Information Systems Service</h5>
+                    </div>
+                </div>
+            
+                <div class="card" style="border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); flex: 1 1 30%; min-width: 300px; max-width: 1px; display: flex; flex-direction: column;">
+                    <img src="images/Asec-Renato-Paraiso-cropped.jpg" class="card-img-top" alt="Image 2" 
+                         style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="card-body" style="background-color: #f8f9fa; text-align: justify; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px;">
+                        <h3 class="card-title" style="color: #1e2731; text-align: left; font-weight: bolder; font-size: large;">Renato A. Paraiso</h3>
+                        <h5 class="card-title" style="color: #1e2731; text-align: left; margin-bottom: 20px; margin-top: 20px;">Assistant Secretary for Legal Affairs</h5>
+                    </div>
+                </div>
+            
+              
+            </div>
+            <p style="font-size: 15px; color: #333; text-underline-offset: 4px; margin: 10px; margin-left: 10%; margin-right: 10%; margin-top: 20px; margin-bottom: 20px;">
+                <a href="contact.html" target="_blank" style="color: blue; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"> Continue to full agency directory →</a>
+            </p>
+              
+
+        
+            
+            
+          
+            
+            
+            </div>
+            
+        
+    </div>
+    
+    
+    
+
+
+
+<div>
+
+</div>
+
+    
+    
+      
+      
+      
+      
+      
+      
+    
+<!-- Bottom Bar -->
+<div class="w-full py-24 bg-[#0A0F1F] text-white text-center flex items-center justify-between px-8">
+    <!-- Photo on the Left -->
+    <img src="images/republika.png" alt="Photo" class="h-40 w-40 object-cover">
+    
+    <!-- Text on the Right -->
+    <p class="ml-8">Copyright © Department of Information and Communications Technology of Ilocos Sur. All Rights Reserved 2025</p>
+</div>
+
+   
+
+<script>
+ 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Dropdown Menu Toggle
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+            let dropdown = this.nextElementSibling;
+
+            // Close other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== dropdown) {
+                    menu.classList.add("hidden");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("hidden");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function(event) {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            if (!menu.classList.contains("hidden") && !menu.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    });
+});
+
+</script>
+<script>
+//TEXT PLUS/MINUS BUTTON
+//TEXT PLUS/MINUS BUTTON
+document.querySelectorAll('.plus-button').forEach(button => {
+    button.addEventListener('click', function() {
+        let paragraph = this.nextElementSibling.querySelector('p'); 
+        
+        // Ensure the paragraph is shown initially
+        if (paragraph.style.display === '' || paragraph.style.display === 'none') {
+            paragraph.style.display = 'block';  // Show the paragraph
+            this.textContent = '-';  // Change the button to minus
+        } else {
+            paragraph.style.display = 'none';  // Hide the paragraph
+            this.textContent = '+';  // Change the button to plus
+        }
+    });
+});
+
+
+</script>
+</body>
+</html>
